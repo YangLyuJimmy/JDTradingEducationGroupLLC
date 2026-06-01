@@ -1,0 +1,9 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="80" fill="#020617" />
+  <rect x="8" y="8" width="144" height="144" rx="72" stroke="#334155" stroke-width="4" />
+  <path d="M37 103C51.5 85 67 80 80 80C93 80 108.5 85 123 103" stroke="#10B981" stroke-width="8" stroke-linecap="round" />
+  <path d="M42 61H59V98H42V61Z" fill="#0EA5E9" />
+  <path d="M68 49H85V98H68V49Z" fill="#10B981" />
+  <path d="M94 38H111V98H94V38Z" fill="#22D3EE" />
+  <text x="80" y="128" fill="#E2E8F0" font-size="16" font-family="Arial, sans-serif" text-anchor="middle">JD</text>
+</svg>
