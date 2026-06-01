@@ -1,17 +1,17 @@
-name: Build and deploy docs
+name: Build and deploy dist
 
 on:
   push:
     branches: [main]
     paths-ignore:
-      - 'docs/**'
+      - 'dist/**'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: deploy-docs
+  group: deploy-dist
   cancel-in-progress: true
 
 jobs:
@@ -30,14 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build site into docs/
+      - name: Build site into dist/
         run: npm run build
 
-      - name: Commit and push docs/
+      - name: Commit and push dist/
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
+          git add -f dist/
           if git diff --staged --quiet; then
             echo "No changes to deploy"
           else
